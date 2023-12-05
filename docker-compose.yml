@@ -2,7 +2,7 @@ services:
 
   db:
     container_name: postgres
-    image: postgres:15.1
+    image: postgres
     environment:
         POSTGRES_USER: aurickcode
         POSTGRES_PASSWORD: aurickpassword
