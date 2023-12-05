@@ -1,0 +1,15 @@
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\customer\CustomerRegistrationRequest.java
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\customer\CustomerJDBCDataAccessService.java
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\Main.java
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\customer\Customer.java
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\customer\CustomerService.java
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\exception\RequestValidationException.java
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\customer\CustomerDAO.java
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\customer\CustomerController.java
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\customer\CustomerJPADataAccessService.java
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\customer\CustomerRepository.java
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\customer\CustomerUpdateRequest.java
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\customer\CustomerRowMapper.java
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\customer\CustomerListDataAccessService.java
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\exception\DuplicateResourceException.java
+f:\spring-boot-example\spring-boot-example\backend\src\main\java\com\aurickcode\exception\ResourceNotFound.java
