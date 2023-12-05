@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="3.055" tests="14" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="14.869" tests="14" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\anuro\AppData\Local\Temp\surefire17182633151143191451\surefirebooter-20231204233304673_3.jar C:\Users\anuro\AppData\Local\Temp\surefire17182633151143191451 2023-12-04T23-33-04_590-jvmRun1 surefire-20231204233304673_1tmp surefire_0-20231204233304673_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\anuro\AppData\Local\Temp\surefire10984657246541341559\surefirebooter-20231205003620383_3.jar C:\Users\anuro\AppData\Local\Temp\surefire10984657246541341559 2023-12-05T00-36-20_303-jvmRun1 surefire-20231205003620383_1tmp surefire_0-20231205003620383_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="f:\spring-boot-example\spring-boot-example\backend\target\test-classes;f:\spring-boot-example\spring-boot-example\backend\target\classes;C:\Users\anuro\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\anuro\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.1.5\spring-boot-starter-data-jpa-3.1.5.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.1.5\spring-boot-starter-aop-3.1.5.jar;C:\Users\anuro\.m2\repository\org\springframework\spring-aop\6.0.13\spring-aop-6.0.13.jar;C:\Users\anuro\.m2\repository\org\aspectj\aspectjweaver\1.9.20\aspectjweaver-1.9.20.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.1.5\spring-boot-starter-jdbc-3.1.5.jar;C:\Users\anuro\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\anuro\.m2\repository\org\springframework\spring-jdbc\6.0.13\spring-jdbc-6.0.13.jar;C:\Users\anuro\.m2\repository\org\hibernate\orm\hibernate-core\6.2.13.Final\hibernate-core-6.2.13.Final.jar;C:\Users\anuro\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\anuro\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\anuro\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\anuro\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\anuro\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\anuro\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\anuro\.m2\repository\net\bytebuddy\byte-buddy\1.14.9\byte-buddy-1.14.9.jar;C:\Users\anuro\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.3\jaxb-runtime-4.0.3.jar;C:\Users\anuro\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.3\jaxb-core-4.0.3.jar;C:\Users\anuro\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\anuro\.m2\repository\org\glassfish\jaxb\txw2\4.0.3\txw2-4.0.3.jar;C:\Users\anuro\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\anuro\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\anuro\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\anuro\.m2\repository\org\springframework\data\spring-data-jpa\3.1.5\spring-data-jpa-3.1.5.jar;C:\Users\anuro\.m2\repository\org\springframework\data\spring-data-commons\3.1.5\spring-data-commons-3.1.5.jar;C:\Users\anuro\.m2\repository\org\springframework\spring-orm\6.0.13\spring-orm-6.0.13.jar;C:\Users\anuro\.m2\repository\org\springframework\spring-context\6.0.13\spring-context-6.0.13.jar;C:\Users\anuro\.m2\repository\org\springframework\spring-tx\6.0.13\spring-tx-6.0.13.jar;C:\Users\anuro\.m2\repository\org\springframework\spring-beans\6.0.13\spring-beans-6.0.13.jar;C:\Users\anuro\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\anuro\.m2\repository\org\springframework\spring-aspects\6.0.13\spring-aspects-6.0.13.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.1.5\spring-boot-starter-web-3.1.5.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-starter\3.1.5\spring-boot-starter-3.1.5.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot\3.1.5\spring-boot-3.1.5.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.1.5\spring-boot-autoconfigure-3.1.5.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.1.5\spring-boot-starter-logging-3.1.5.jar;C:\Users\anuro\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\anuro\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\anuro\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.20.0\log4j-to-slf4j-2.20.0.jar;C:\Users\anuro\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\anuro\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\anuro\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.1.5\spring-boot-starter-json-3.1.5.jar;C:\Users\anuro\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\anuro\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;C:\Users\anuro\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;C:\Users\anuro\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.1.5\spring-boot-starter-tomcat-3.1.5.jar;C:\Users\anuro\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.15\tomcat-embed-core-10.1.15.jar;C:\Users\anuro\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.15\tomcat-embed-el-10.1.15.jar;C:\Users\anuro\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.15\tomcat-embed-websocket-10.1.15.jar;C:\Users\anuro\.m2\repository\org\springframework\spring-web\6.0.13\spring-web-6.0.13.jar;C:\Users\anuro\.m2\repository\io\micrometer\micrometer-observation\1.11.5\micrometer-observation-1.11.5.jar;C:\Users\anuro\.m2\repository\io\micrometer\micrometer-commons\1.11.5\micrometer-commons-1.11.5.jar;C:\Users\anuro\.m2\repository\org\springframework\spring-webmvc\6.0.13\spring-webmvc-6.0.13.jar;C:\Users\anuro\.m2\repository\org\springframework\spring-expression\6.0.13\spring-expression-6.0.13.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-starter-data-jdbc\3.1.5\spring-boot-starter-data-jdbc-3.1.5.jar;C:\Users\anuro\.m2\repository\org\springframework\data\spring-data-jdbc\3.1.5\spring-data-jdbc-3.1.5.jar;C:\Users\anuro\.m2\repository\org\springframework\data\spring-data-relational\3.1.5\spring-data-relational-3.1.5.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.1.5\spring-boot-starter-test-3.1.5.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-test\3.1.5\spring-boot-test-3.1.5.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.1.5\spring-boot-test-autoconfigure-3.1.5.jar;C:\Users\anuro\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\anuro\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\anuro\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\anuro\.m2\repository\net\minidev\json-smart\2.4.11\json-smart-2.4.11.jar;C:\Users\anuro\.m2\repository\net\minidev\accessors-smart\2.4.11\accessors-smart-2.4.11.jar;C:\Users\anuro\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\anuro\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\anuro\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\anuro\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\anuro\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\anuro\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\anuro\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\anuro\.m2\repository\org\mockito\mockito-core\5.3.1\mockito-core-5.3.1.jar;C:\Users\anuro\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.9\byte-buddy-agent-1.14.9.jar;C:\Users\anuro\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\anuro\.m2\repository\org\mockito\mockito-junit-jupiter\5.3.1\mockito-junit-jupiter-5.3.1.jar;C:\Users\anuro\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\anuro\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\anuro\.m2\repository\org\springframework\spring-core\6.0.13\spring-core-6.0.13.jar;C:\Users\anuro\.m2\repository\org\springframework\spring-jcl\6.0.13\spring-jcl-6.0.13.jar;C:\Users\anuro\.m2\repository\org\springframework\spring-test\6.0.13\spring-test-6.0.13.jar;C:\Users\anuro\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\anuro\.m2\repository\org\flywaydb\flyway-core\9.16.3\flyway-core-9.16.3.jar;C:\Users\anuro\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-toml\2.15.3\jackson-dataformat-toml-2.15.3.jar;C:\Users\anuro\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\anuro\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\anuro\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\anuro\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\anuro\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\anuro\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\anuro\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\anuro\.m2\repository\org\testcontainers\testcontainers\1.19.2\testcontainers-1.19.2.jar;C:\Users\anuro\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\anuro\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\anuro\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\anuro\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\anuro\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\anuro\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\anuro\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\anuro\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\anuro\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.4\docker-java-transport-zerodep-3.3.4.jar;C:\Users\anuro\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\anuro\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\anuro\.m2\repository\org\testcontainers\junit-jupiter\1.17.6\junit-jupiter-1.17.6.jar;C:\Users\anuro\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\anuro\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\anuro\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\anuro\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\anuro\.m2\repository\org\testcontainers\postgresql\1.17.6\postgresql-1.17.6.jar;C:\Users\anuro\.m2\repository\org\testcontainers\jdbc\1.18.3\jdbc-1.18.3.jar;C:\Users\anuro\.m2\repository\org\testcontainers\database-commons\1.18.3\database-commons-1.18.3.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-starter-webflux\3.1.5\spring-boot-starter-webflux-3.1.5.jar;C:\Users\anuro\.m2\repository\org\springframework\boot\spring-boot-starter-reactor-netty\3.1.5\spring-boot-starter-reactor-netty-3.1.5.jar;C:\Users\anuro\.m2\repository\io\projectreactor\netty\reactor-netty-http\1.1.12\reactor-netty-http-1.1.12.jar;C:\Users\anuro\.m2\repository\io\netty\netty-codec-http\4.1.100.Final\netty-codec-http-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\io\netty\netty-common\4.1.100.Final\netty-common-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\io\netty\netty-buffer\4.1.100.Final\netty-buffer-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\io\netty\netty-transport\4.1.100.Final\netty-transport-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\io\netty\netty-codec\4.1.100.Final\netty-codec-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\io\netty\netty-handler\4.1.100.Final\netty-handler-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\io\netty\netty-codec-http2\4.1.100.Final\netty-codec-http2-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\io\netty\netty-resolver-dns\4.1.100.Final\netty-resolver-dns-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\io\netty\netty-resolver\4.1.100.Final\netty-resolver-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\io\netty\netty-codec-dns\4.1.100.Final\netty-codec-dns-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.100.Final\netty-resolver-dns-native-macos-4.1.100.Final-osx-x86_64.jar;C:\Users\anuro\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.100.Final\netty-resolver-dns-classes-macos-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\io\netty\netty-transport-native-epoll\4.1.100.Final\netty-transport-native-epoll-4.1.100.Final-linux-x86_64.jar;C:\Users\anuro\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.100.Final\netty-transport-native-unix-common-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.100.Final\netty-transport-classes-epoll-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\io\projectreactor\netty\reactor-netty-core\1.1.12\reactor-netty-core-1.1.12.jar;C:\Users\anuro\.m2\repository\io\netty\netty-handler-proxy\4.1.100.Final\netty-handler-proxy-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\io\netty\netty-codec-socks\4.1.100.Final\netty-codec-socks-4.1.100.Final.jar;C:\Users\anuro\.m2\repository\org\springframework\spring-webflux\6.0.13\spring-webflux-6.0.13.jar;C:\Users\anuro\.m2\repository\io\projectreactor\reactor-core\3.5.11\reactor-core-3.5.11.jar;C:\Users\anuro\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\anuro\AppData\Local\Temp\surefire17182633151143191451\surefirebooter-20231204233304673_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\anuro\AppData\Local\Temp\surefire10984657246541341559\surefirebooter-20231205003620383_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21+35-LTS-2513"/>
@@ -59,133 +59,163 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testDeleteCustomerById" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.235">
-    <system-out><![CDATA[23:33:05.175 [main] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
-23:33:05.179 [main] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
-23:33:05.326 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
-23:33:05.466 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
-23:33:05.471 [main] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
-23:33:05.483 [main] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+  <testcase name="testDeleteCustomerById" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.446">
+    <system-out><![CDATA[00:36:20.906 [main] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+00:36:20.911 [main] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+00:36:21.060 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+00:36:21.224 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+00:36:21.224 [main] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+00:36:21.239 [main] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
   Server Version: 24.0.6
   API Version: 1.43
   Operating System: Docker Desktop
   Total Memory: 15835 MB
-23:33:05.504 [main] INFO tc.testcontainers/ryuk:0.5.1 -- Creating container for image: testcontainers/ryuk:0.5.1
-23:33:05.678 [main] INFO tc.testcontainers/ryuk:0.5.1 -- Container testcontainers/ryuk:0.5.1 is starting: 98b408c72a37e88e0f2fa8943e0e71e34b95b827e44fd9c782718954c8abb20c
-23:33:06.032 [main] INFO tc.testcontainers/ryuk:0.5.1 -- Container testcontainers/ryuk:0.5.1 started in PT0.5272888S
-23:33:06.035 [main] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-23:33:06.035 [main] INFO org.testcontainers.DockerClientFactory -- Checking the system...
-23:33:06.035 [main] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
-23:33:06.036 [main] INFO tc.postgres:latest -- Creating container for image: postgres:latest
-23:33:06.052 [main] INFO tc.postgres:latest -- Container postgres:latest is starting: 0b844d34ea26316644f501e1321cfdca35252db6603ed360c8fb3abf47934e4d
-23:33:06.941 [main] INFO tc.postgres:latest -- Container postgres:latest started in PT0.9052298S
-23:33:06.942 [main] INFO tc.postgres:latest -- Container is started (JDBC URL: jdbc:postgresql://localhost:53524/aurickcode-dao-unit-test?loggerLevel=OFF)
-23:33:07.007 [main] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.16.3 by Redgate
-23:33:07.007 [main] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
-23:33:07.007 [main] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
-23:33:07.133 [main] INFO org.flywaydb.core.internal.database.base.BaseDatabaseType -- Database: jdbc:postgresql://localhost:53524/aurickcode-dao-unit-test (PostgreSQL 16.1)
-23:33:07.141 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: PostgreSQL 16.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 15.
-23:33:07.158 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "public"."flyway_schema_history" does not exist yet
-23:33:07.161 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 2 migrations (execution time 00:00.010s)
-23:33:07.173 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "public"."flyway_schema_history" ...
-23:33:07.219 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "public": << Empty Schema >>
-23:33:07.225 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "public" to version "1 - Initial Setup"
-23:33:07.245 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "public" to version "2 - Add Unique Constraint To Customer Email"
-23:33:07.255 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 2 migrations to schema "public", now at version v2 (execution time 00:00.043s)
+00:36:21.261 [main] INFO tc.testcontainers/ryuk:0.5.1 -- Creating container for image: testcontainers/ryuk:0.5.1
+00:36:21.515 [main] INFO tc.testcontainers/ryuk:0.5.1 -- Container testcontainers/ryuk:0.5.1 is starting: cf2b4f5b57f4a87a1eb7fdaf5d078b8588f5dd044da1228911c20bc95532e0c1
+00:36:21.937 [main] INFO tc.testcontainers/ryuk:0.5.1 -- Container testcontainers/ryuk:0.5.1 started in PT0.6748914S
+00:36:21.942 [main] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+00:36:21.942 [main] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+00:36:21.942 [main] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+00:36:21.952 [main] INFO tc.postgres:latest -- Pulling docker image: postgres:latest. Please be patient; this may take some time but only needs to be done once.
+00:36:23.394 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Starting to pull image
+00:36:23.404 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
+00:36:24.241 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers: 12 pending,  1 downloaded,  0 extracted, (1 KB/? MB)
+00:36:24.617 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers: 11 pending,  2 downloaded,  0 extracted, (7 MB/? MB)
+00:36:24.871 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers: 10 pending,  3 downloaded,  0 extracted, (14 MB/? MB)
+00:36:25.664 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  9 pending,  4 downloaded,  0 extracted, (32 MB/? MB)
+00:36:25.810 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  8 pending,  5 downloaded,  0 extracted, (37 MB/? MB)
+00:36:25.843 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  7 pending,  6 downloaded,  0 extracted, (40 MB/? MB)
+00:36:26.069 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  6 pending,  7 downloaded,  0 extracted, (40 MB/? MB)
+00:36:26.176 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  5 pending,  8 downloaded,  0 extracted, (40 MB/? MB)
+00:36:26.508 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  4 pending,  9 downloaded,  0 extracted, (47 MB/? MB)
+00:36:26.646 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  3 pending, 10 downloaded,  0 extracted, (50 MB/? MB)
+00:36:27.068 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  3 pending, 10 downloaded,  1 extracted, (56 MB/? MB)
+00:36:27.086 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  3 pending, 10 downloaded,  2 extracted, (56 MB/? MB)
+00:36:27.187 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  3 pending, 10 downloaded,  3 extracted, (59 MB/? MB)
+00:36:27.228 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  3 pending, 10 downloaded,  4 extracted, (60 MB/? MB)
+00:36:27.465 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  2 pending, 11 downloaded,  4 extracted, (63 MB/? MB)
+00:36:27.490 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  2 pending, 11 downloaded,  5 extracted, (63 MB/? MB)
+00:36:27.540 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  2 pending, 11 downloaded,  6 extracted, (63 MB/? MB)
+00:36:27.556 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  2 pending, 11 downloaded,  7 extracted, (65 MB/? MB)
+00:36:27.568 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  2 pending, 11 downloaded,  8 extracted, (65 MB/? MB)
+00:36:30.347 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  1 pending, 12 downloaded,  8 extracted, (143 MB/? MB)
+00:36:32.440 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  1 pending, 12 downloaded,  9 extracted, (145 MB/? MB)
+00:36:32.450 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  1 pending, 12 downloaded, 10 extracted, (145 MB/? MB)
+00:36:32.460 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  1 pending, 12 downloaded, 11 extracted, (145 MB/? MB)
+00:36:32.471 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  1 pending, 12 downloaded, 12 extracted, (145 MB/? MB)
+00:36:32.482 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pulling image layers:  1 pending, 12 downloaded, 13 extracted, (145 MB/? MB)
+00:36:32.494 [docker-java-stream--1780587307] INFO tc.postgres:latest -- Pull complete. 13 layers, pulled in 9s (downloaded 145 MB at 16 MB/s)
+00:36:32.496 [main] INFO tc.postgres:latest -- Image postgres:latest pull took PT10.544801S
+00:36:32.500 [main] INFO tc.postgres:latest -- Creating container for image: postgres:latest
+00:36:32.826 [main] INFO tc.postgres:latest -- Container postgres:latest is starting: db1f45b79e81ac091f702b5f3fe2bfc0cac41ae36e239d2f86a3bd83d856fdf1
+00:36:33.833 [main] INFO tc.postgres:latest -- Container postgres:latest started in PT1.33264S
+00:36:33.833 [main] INFO tc.postgres:latest -- Container is started (JDBC URL: jdbc:postgresql://localhost:54843/aurickcode-dao-unit-test?loggerLevel=OFF)
+00:36:33.923 [main] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.16.3 by Redgate
+00:36:33.923 [main] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+00:36:33.923 [main] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+00:36:34.129 [main] INFO org.flywaydb.core.internal.database.base.BaseDatabaseType -- Database: jdbc:postgresql://localhost:54843/aurickcode-dao-unit-test (PostgreSQL 16.1)
+00:36:34.142 [main] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: PostgreSQL 16.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 15.
+00:36:34.161 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "public"."flyway_schema_history" does not exist yet
+00:36:34.164 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 2 migrations (execution time 00:00.014s)
+00:36:34.178 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "public"."flyway_schema_history" ...
+00:36:34.221 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "public": << Empty Schema >>
+00:36:34.229 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "public" to version "1 - Initial Setup"
+00:36:34.256 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "public" to version "2 - Add Unique Constraint To Customer Email"
+00:36:34.271 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 2 migrations to schema "public", now at version v2 (execution time 00:00.055s)
 
-23:33:07.392 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-1 - Starting...
-23:33:07.441 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@406ad6d5
-23:33:07.443 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-1 - Start completed.
+00:36:34.521 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-1 - Starting...
+00:36:34.581 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7a2a7492
+00:36:34.586 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-1 - Start completed.
 Result: 1
 deleteCustomerById result = 1
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateCustomerName" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.038">
-    <system-out><![CDATA[23:33:07.498 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-2 - Starting...
-23:33:07.525 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@1edf71d9
-23:33:07.525 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-2 - Start completed.
+  <testcase name="testUpdateCustomerName" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.042">
+    <system-out><![CDATA[00:36:34.732 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-2 - Starting...
+00:36:34.746 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@29fcfc54
+00:36:34.746 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-2 - Start completed.
 Result: 1
 update customer name result = 1
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateCustomerAge" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.018">
-    <system-out><![CDATA[23:33:07.539 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-3 - Starting...
-23:33:07.550 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@7657d90b
-23:33:07.550 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-3 - Start completed.
+  <testcase name="testUpdateCustomerAge" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.023">
+    <system-out><![CDATA[00:36:34.774 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-3 - Starting...
+00:36:34.788 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@74fc3fc7
+00:36:34.788 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-3 - Start completed.
 Result: 1
 update customer age result = 1
 ]]></system-out>
   </testcase>
-  <testcase name="willUpdateAllPropertiesCustomer" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.02">
-    <system-out><![CDATA[23:33:07.558 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-4 - Starting...
-23:33:07.569 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@7645e64
-23:33:07.569 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-4 - Start completed.
+  <testcase name="willUpdateAllPropertiesCustomer" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.025">
+    <system-out><![CDATA[00:36:34.801 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-4 - Starting...
+00:36:34.814 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@4cc7e3ad
+00:36:34.814 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-4 - Start completed.
 Result: 1
 update customer name result = 1
 update customer age result = 1
 update customer email result = 1
 ]]></system-out>
   </testcase>
-  <testcase name="existsPersonWithIdWillReturnFalseWhenIdNotPresent" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.027">
-    <system-out><![CDATA[23:33:07.592 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-5 - Starting...
-23:33:07.601 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@1f9a7684
-23:33:07.601 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-5 - Start completed.
+  <testcase name="existsPersonWithIdWillReturnFalseWhenIdNotPresent" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.047">
+    <system-out><![CDATA[00:36:34.851 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-5 - Starting...
+00:36:34.866 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@5a51336a
+00:36:34.867 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-5 - Start completed.
 ]]></system-out>
   </testcase>
-  <testcase name="testSelectCustomerById" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.015">
-    <system-out><![CDATA[23:33:07.606 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-6 - Starting...
-23:33:07.616 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@175f859e
-23:33:07.616 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-6 - Start completed.
+  <testcase name="testSelectCustomerById" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.02">
+    <system-out><![CDATA[00:36:34.875 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-6 - Starting...
+00:36:34.887 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@343db2f6
+00:36:34.888 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-6 - Start completed.
 Result: 1
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateCustomerEmail" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.024">
-    <system-out><![CDATA[23:33:07.622 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-7 - Starting...
-23:33:07.639 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@386e9fd8
-23:33:07.640 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-7 - Start completed.
+  <testcase name="testUpdateCustomerEmail" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.021">
+    <system-out><![CDATA[00:36:34.896 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-7 - Starting...
+00:36:34.907 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@2b1a901d
+00:36:34.907 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-7 - Start completed.
 Result: 1
 update customer email result = 1
 ]]></system-out>
   </testcase>
-  <testcase name="testInsertCustomer" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.001"/>
-  <testcase name="willNotUpdateWhenNothingToUpdate" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.014">
-    <system-out><![CDATA[23:33:07.648 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-8 - Starting...
-23:33:07.658 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@5464b97c
-23:33:07.658 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-8 - Start completed.
+  <testcase name="testInsertCustomer" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.002"/>
+  <testcase name="willNotUpdateWhenNothingToUpdate" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.02">
+    <system-out><![CDATA[00:36:34.921 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-8 - Starting...
+00:36:34.934 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@4269aad7
+00:36:34.934 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-8 - Start completed.
 Result: 1
 ]]></system-out>
   </testcase>
-  <testcase name="testExistsPersonWithEmail" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.016">
-    <system-out><![CDATA[23:33:07.663 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-9 - Starting...
-23:33:07.674 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-9 - Added connection org.postgresql.jdbc.PgConnection@5341e71a
-23:33:07.675 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-9 - Start completed.
+  <testcase name="testExistsPersonWithEmail" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.017">
+    <system-out><![CDATA[00:36:34.942 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-9 - Starting...
+00:36:34.954 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-9 - Added connection org.postgresql.jdbc.PgConnection@6728370a
+00:36:34.954 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-9 - Start completed.
 Result: 1
 ]]></system-out>
   </testcase>
   <testcase name="testExistsPersonWithId" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.019">
-    <system-out><![CDATA[23:33:07.679 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-10 - Starting...
-23:33:07.693 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-10 - Added connection org.postgresql.jdbc.PgConnection@75452aea
-23:33:07.693 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-10 - Start completed.
+    <system-out><![CDATA[00:36:34.960 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-10 - Starting...
+00:36:34.972 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-10 - Added connection org.postgresql.jdbc.PgConnection@5a466dd
+00:36:34.972 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-10 - Start completed.
 Result: 1
 ]]></system-out>
   </testcase>
-  <testcase name="existsPersonWithEmailReturnsFalseWhenDoesNotExists" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.014">
-    <system-out><![CDATA[23:33:07.699 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-11 - Starting...
-23:33:07.710 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-11 - Added connection org.postgresql.jdbc.PgConnection@3212bfd
-23:33:07.710 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-11 - Start completed.
+  <testcase name="existsPersonWithEmailReturnsFalseWhenDoesNotExists" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.016">
+    <system-out><![CDATA[00:36:34.980 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-11 - Starting...
+00:36:34.992 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-11 - Added connection org.postgresql.jdbc.PgConnection@66b6873f
+00:36:34.992 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-11 - Start completed.
 ]]></system-out>
   </testcase>
-  <testcase name="testSelectAllCustomers" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.064">
-    <system-out><![CDATA[23:33:07.715 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-12 - Starting...
-23:33:07.767 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-12 - Added connection org.postgresql.jdbc.PgConnection@34cb0e49
-23:33:07.768 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-12 - Start completed.
+  <testcase name="testSelectAllCustomers" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.022">
+    <system-out><![CDATA[00:36:34.998 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-12 - Starting...
+00:36:35.009 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-12 - Added connection org.postgresql.jdbc.PgConnection@1bec1589
+00:36:35.009 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-12 - Start completed.
 Result: 1
 ]]></system-out>
   </testcase>
-  <testcase name="willReturnEmptyWhenSelectCustomerById" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.016">
-    <system-out><![CDATA[23:33:07.778 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-13 - Starting...
-23:33:07.791 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-13 - Added connection org.postgresql.jdbc.PgConnection@3e98b933
-23:33:07.792 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-13 - Start completed.
+  <testcase name="willReturnEmptyWhenSelectCustomerById" classname="com.aurickcode.customer.CustomerJDBCDataAccessServiceTest" time="0.014">
+    <system-out><![CDATA[00:36:35.020 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-13 - Starting...
+00:36:35.032 [main] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-13 - Added connection org.postgresql.jdbc.PgConnection@7d537616
+00:36:35.032 [main] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-13 - Start completed.
 ]]></system-out>
   </testcase>
 </testsuite>
