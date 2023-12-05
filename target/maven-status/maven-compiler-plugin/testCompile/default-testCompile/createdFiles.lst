@@ -1,0 +1,11 @@
+com\aurickcode\customer\CustomerJPADataAccessServiceTest.class
+com\aurickcode\journey\CustomerIntegrationTest$3.class
+com\aurickcode\TestcontainersTest.class
+com\aurickcode\customer\CustomerServiceTest.class
+com\aurickcode\journey\CustomerIntegrationTest.class
+com\aurickcode\AbstractTestContainers.class
+com\aurickcode\customer\CustomerRepositoryTest.class
+com\aurickcode\journey\CustomerIntegrationTest$1.class
+com\aurickcode\journey\CustomerIntegrationTest$2.class
+com\aurickcode\customer\CustomerJDBCDataAccessServiceTest.class
+com\aurickcode\journey\CustomerIntegrationTest$4.class
