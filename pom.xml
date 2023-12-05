@@ -161,17 +161,9 @@
 				<configuration>
 					<from>
 						<image>eclipse-temurin:17</image>
-						<auth>
-                            <username>${env.DOCKER_USER}</username>
-                            <password>${env.DOCKER_PASSWORD}</password>
-                        </auth>
 					</from>
 					<to>
 						<image>docker.io/${docker.username}/${project.artifactId}:${project.version}</image>
-						<auth>
-                            <username>${secrets.DOCKER_USER}</username>
-                            <password>${secrets.DOCKER_PASSWORD}</password>
-                        </auth>
 					</to>
 				</configuration>
 				<executions>
