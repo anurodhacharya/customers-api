@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import com.github.javafaker.Faker;
 import com.github.javafaker.Name;
 import com.aurickcode.customer.Customer;
-import com.aurickcode.customer.CustomerRepository;
+import com.aurickcode.customer.CustomerRepository; 
 
 @SpringBootApplication
 public class Main {
