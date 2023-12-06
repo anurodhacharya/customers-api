@@ -11,14 +11,15 @@
 	<groupId>com.aurickcode</groupId>
 	<artifactId>aurickcode-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<organization>
-		<name>aurickcode</name>
-	</organization>
+
 	<name>spring-boot-example</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 		<docker.username>anurodh1</docker.username>
+		<docker.image.name>aurickcode-api</docker.image.name>
+		<docker.image.tag/>
+
 	</properties>
 	<dependencies>
         <dependency>
@@ -163,7 +164,7 @@
 						<image>eclipse-temurin:17</image>
 					</from>
 					<to>
-						<image>docker.io/${docker.username}/${project.artifactId}:${project.version}</image>
+						<image>docker.io/${docker.username}/${docker.image.name}:${docker.image.tag}</image>
 					</to>
 				</configuration>
 				<executions>
