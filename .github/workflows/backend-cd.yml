@@ -18,7 +18,8 @@ jobs:
           POSTGRES_USER: aurickcode
           POSTGRES_PASSWORD: aurickpassword
           POSTGRES_DB: customer
-        ports: 5432:5432
+        ports: 
+          - 5432:5432
         options: --health-cmd pd_ready
           --health-interval 10s
           --health-timeout 5s
