@@ -3,7 +3,7 @@
     "containerDefinitions": [
     {
         "name": "aurickcode-api",
-        "image": "anurodh1/aurickcode-api:07.12.2023.09.30.52",
+        "image": "anurodh1/aurickcode-api:07.12.2023.23.32.47",
         "essential": true,
         "memory": 512,
         "portMappings": [
