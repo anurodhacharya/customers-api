@@ -32,6 +32,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Post slack message
+        run: >
+          curl -X POST -H 'Content-type: application/json' --data 
+          '{"text":"Deployment Started :progress_bar: :fingerscrossed:"}' 
+          ${{ secrets.WEBHOOK_URL }}
+
       - uses: actions/setup-java@v4
         with:
           distribution: "temurin" # See 'Supported distributions' for available options
@@ -48,8 +54,20 @@ jobs:
         id: build-number
         run: echo "BUILD_NUMBER=$(date '+%d.%m.%Y.%H.%M.%S')" >> $GITHUB_OUTPUT
 
+      - name: Post slack message
+        run: >
+          curl -X POST -H 'Content-type: application/json' --data 
+          '{"text":"Building with Maven :maven:"}' 
+          ${{ secrets.WEBHOOK_URL }}
+
       - name: Build Package Push with Maven
         run: mvn -ntp -B verify -Ddocker.image.tag=${{ steps.build-number.outputs.BUILD_NUMBER }} jib:build
+
+      - name: Post slack message
+        run: >
+          curl -X POST -H 'Content-type: application/json' --data
+          '{"text":":docker: Image ${{steps.build-number.outputs.BUILD_NUMBER}} pushed to dockerhub repository."}' 
+          ${{ secrets.WEBHOOK_URL }}
 
       - name: Update Dockerrun.aws.json api image tag with new build number
         run: |
@@ -58,6 +76,12 @@ jobs:
           sed -i -E 's_(anurodh1/aurickcode-api:)([^"]*)_\1'${{ steps.build-number.outputs.BUILD_NUMBER }}'_' Dockerrun.aws.json
           echo "Dockerrun.aws.json after updating tag"
           cat Dockerrun.aws.json
+
+      - name: Post slack message
+        run: >
+          curl -X POST -H 'Content-type: application/json' --data 
+          '{"text":":aws: Starting deployment to Elastic Beanstalk!"}' 
+          ${{ secrets.WEBHOOK_URL }}
 
       - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v21
@@ -71,6 +95,12 @@ jobs:
           region: ${{ secrets.EB_REGION }}
           deployment_package: backend/Dockerrun.aws.json
 
+      - name: Post slack message
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data 
+          '{"text":":github: Commiting to the repo!"}' 
+          ${{ secrets.WEBHOOK_URL }}
+
       - name: Commit and push Dockerrun.aws.json
         run: |
           git config user.name github-actions
@@ -78,3 +108,16 @@ jobs:
           git add .
           git commit -m "Update Dockerrun.aws.json docker image with new tag ${{ steps.build-number.outputs.BUILD_NUMBER }}"
           git push
+      
+      - name: Deployment and commit completed
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data 
+          '{"text":"Deployment and commit completed :github_check_mark: :party_blob: - https://github.com/anurodhacharya/customers-api"}' 
+          ${{ secrets.WEBHOOK_URL }}
+      
+      - name: Send Slack Message
+        if: always()
+        run: >
+          curl -X POST -H 'Content-type: application/json' --data 
+          '{"text":"Job Status ${{ job.status }}"}' 
+          ${{ secrets.WEBHOOK_URL }}
