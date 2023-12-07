@@ -34,7 +34,8 @@ jobs:
 
       - name: Post slack message
         run: >
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"Deployment Started :progress_bar: :fingerscrossed:"}' 
+          curl -X POST -H 'Content-type: application/json' --data 
+          '{"text":"Deployment Started :progress_bar: :fingerscrossed:"}' 
           ${{ secrets.WEBHOOK_URL }}
 
       - uses: actions/setup-java@v4
@@ -55,7 +56,8 @@ jobs:
 
       - name: Post slack message
         run: >
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"Building with Maven :maven:"}' 
+          curl -X POST -H 'Content-type: application/json' --data 
+          '{"text":"Building with Maven :maven:"}' 
           ${{ secrets.WEBHOOK_URL }}
 
       - name: Build Package Push with Maven
@@ -95,7 +97,8 @@ jobs:
 
       - name: Post slack message
         run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":":github: Commiting to the repo!"}' 
+          curl -X POST -H 'Content-type: application/json' --data 
+          '{"text":":github: Commiting to the repo!"}'
           ${{ secrets.WEBHOOK_URL }}
 
       - name: Commit and push Dockerrun.aws.json
@@ -115,5 +118,6 @@ jobs:
       - name: Send Slack Message
         if: always()
         run: >
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"Job Status ${{ job.status }}"}' 
+          curl -X POST -H 'Content-type: application/json' --data
+          '{"text":"Job Status ${{ job.status }}"}' 
           ${{ secrets.WEBHOOK_URL }}
