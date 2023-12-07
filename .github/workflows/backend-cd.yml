@@ -112,7 +112,7 @@ jobs:
       - name: Deployment and commit completed
         run: >
           curl -X POST -H 'Content-type: application/json' --data 
-          '{"text":"Deployment and commit completed :github_check_mark: :party_blob: - https://github.com/anurodhacharya/customers-api"}' 
+          '{"text":"Deployment and commit completed :github_check_mark: :partyblob: - https://github.com/anurodhacharya/customers-api"}' 
           ${{ secrets.WEBHOOK_URL }}
       
       - name: Send Slack Message
