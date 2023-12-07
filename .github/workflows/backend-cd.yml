@@ -96,7 +96,7 @@ jobs:
           deployment_package: backend/Dockerrun.aws.json
 
       - name: Post slack message
-        run: |
+        run: >
           curl -X POST -H 'Content-type: application/json' --data 
           '{"text":":github: Commiting to the repo!"}'
           ${{ secrets.WEBHOOK_URL }}
@@ -110,7 +110,7 @@ jobs:
           git push
       
       - name: Deployment and commit completed
-        run: |
+        run: >
           curl -X POST -H 'Content-type: application/json' --data 
           '{"text":"Deployment and commit completed :github_check_mark: :party_blob: - https://github.com/anurodhacharya/customers-api"}' 
           ${{ secrets.WEBHOOK_URL }}
