@@ -34,9 +34,9 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Echo commit message and sha   
-        run: |
+        run: >
           curl -X POST -H 'Content-type: application/json' --data 
-          '{"text":"https://github.com/anurodhacharya/customers-api/commit/"}' 
+          '{"text":"https://github.com/anurodhacharya/customers-api/commit/${{ github.sha }} - ${{ github.event.head_commit.message }}"}' 
           ${{ secrets.WEBHOOK_URL }}
 
       - name: Post slack message

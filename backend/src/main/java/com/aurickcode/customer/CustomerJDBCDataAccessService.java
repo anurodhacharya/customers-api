@@ -38,7 +38,7 @@ public class CustomerJDBCDataAccessService implements CustomerDAO {
     public boolean existsPersonWithId(Long id) {
         String sql = """
                 SELECT COUNT(id) FROM customer WHERE id = ?
-                """;
+                """; 
         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, id);
         return count != null && count > 0;
     }
