@@ -30,9 +30,14 @@ jobs:
         working-directory: ./backend
 
     steps:
-
         
       - uses: actions/checkout@v3
+
+      - name: Echo commit message and sha   
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data 
+          '{"text":"https://github.com/anurodhacharya/customers-api/commit/"}' 
+          ${{ secrets.WEBHOOK_URL }}
 
       - name: Post slack message
         run: >
