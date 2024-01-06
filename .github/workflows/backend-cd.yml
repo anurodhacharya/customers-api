@@ -31,7 +31,7 @@ jobs:
 
     steps:
       - name: Echo commit message and sha   
-        run: >
+        run: |
           curl -X POST -H 'Content-type: application/json' --data 
           '{"text":"https://github.com/anurodhacharya/customers-api/commit/"}' 
           ${{ secrets.WEBHOOK_URL }}                   

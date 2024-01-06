@@ -34,7 +34,7 @@ public class CustomerJDBCDataAccessService implements CustomerDAO {
         return count != null && count > 0;  
     }
 
-    @Override 
+    @Override  
     public boolean existsPersonWithId(Long id) {
         String sql = """
                 SELECT COUNT(id) FROM customer WHERE id = ?
