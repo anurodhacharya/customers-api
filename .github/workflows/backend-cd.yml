@@ -30,11 +30,7 @@ jobs:
         working-directory: ./backend
 
     steps:
-      - name: Echo commit message and sha   
-        run: |
-          curl -X POST -H 'Content-type: application/json' --data 
-          '{"text":"https://github.com/anurodhacharya/customers-api/commit/"}' 
-          ${{ secrets.WEBHOOK_URL }}                   
+
         
       - uses: actions/checkout@v3
 
