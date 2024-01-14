@@ -1,0 +1,1 @@
+ALTER TABLE customer ADD gender VARCHAR(255);

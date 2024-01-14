@@ -46,16 +46,16 @@ public class CustomerJDBCDataAccessService implements CustomerDAO {
     @Override
     public void insertCustomer(Customer customer) {
         var sql = """
-                INSERT INTO customer(name, email, age) VALUES (?, ?, ?)
+                INSERT INTO customer(name, email, age, gender) VALUES (?, ?, ?, ?)
             """;
-        int result = jdbcTemplate.update(sql, customer.getName(), customer.getEmail(), customer.getAge());
+        int result = jdbcTemplate.update(sql, customer.getName(), customer.getEmail(), customer.getAge(), customer.getGender());
         System.out.println("Result: " + result);
     }
 
     @Override
     public List<Customer> selectAllCustomers() {
         var sql = """
-                SELECT id, name, email, age FROM customer
+                SELECT id, name, email, age, gender FROM customer
             """;
         
         List<Customer> customers = jdbcTemplate.query(sql, customerRowMapper);
@@ -65,7 +65,7 @@ public class CustomerJDBCDataAccessService implements CustomerDAO {
     @Override
     public Optional<Customer> selectCustomerById(Long id) {
         String sql = """
-                SELECT id, name, email, age FROM Customer WHERE id = ?
+                SELECT id, name, email, age, gender FROM Customer WHERE id = ?
                 """;
         return jdbcTemplate.query(sql, customerRowMapper, id).stream().findFirst();
     }
@@ -90,10 +90,16 @@ public class CustomerJDBCDataAccessService implements CustomerDAO {
             System.out.println("update customer email result = " + result);
         }
 
+        if(update.getGender() != null) {
+            String sql = "UPDATE customer SET gender = ? WHERE id = ?";
+            int result = jdbcTemplate.update(sql, update.getGender(), update.getId());
+            System.out.println("update customer gender result = " + result);
+        }
+
         // String sql = """
-        //         UPDATE customer SET name = ?, email = ?, age = ? WHERE id = ?
+        //         UPDATE customer SET name = ?, email = ?, age = ?, gender = ? WHERE id = ?
         //         """;
-        // int result = jdbcTemplate.update(sql, update.getName(), update.getEmail(), update.getAge(), update.getId());
+        // int result = jdbcTemplate.update(sql, update.getName(), update.getEmail(), update.getAge(), update.getGender(), update.getId());
         // System.out.println(result);
     }
     

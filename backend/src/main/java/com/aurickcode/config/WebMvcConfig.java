@@ -15,6 +15,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
     private List<String> allowedOrigins;
     @Value("#{'${cors.allowed-methods}'.split(',')}")
     private List<String> allowedMethods;
+    @Value("#{'${cors.allowed-headers}'.split(',')}")
+    private List<String> allowedHeaders;
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
@@ -23,7 +25,11 @@ public class WebMvcConfig implements WebMvcConfigurer {
         //         .allowedMethods("GET", "POST", "PUT", "DELETE");
 
         CorsRegistration corsRegistration = registry.addMapping("/api/**");
-        allowedOrigins.forEach(origin -> corsRegistration.allowedOrigins(origin));
-        allowedMethods.forEach(origin -> corsRegistration.allowedMethods(origin));
+        // allowedOrigins.forEach(origin -> corsRegistration.allowedOrigins(origin));
+        // allowedMethods.forEach(origin -> corsRegistration.allowedMethods(origin));
+        // allowedHeaders.forEach(origin -> corsRegistration.allowedHeaders(origin));
+        allowedOrigins.forEach(corsRegistration::allowedOrigins);
+        allowedMethods.forEach(corsRegistration::allowedMethods);
+        allowedHeaders.forEach(corsRegistration::allowedHeaders);
     }
 }

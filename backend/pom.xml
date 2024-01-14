@@ -18,7 +18,7 @@
 		<java.version>17</java.version>
 		<docker.username>anurodh1</docker.username>
 		<docker.image.name>aurickcode-api</docker.image.name>
-		<docker.image.tag/>
+		<docker.image.tag>0.0.1-SNAPSHOT</docker.image.tag>
 	</properties>
 	<dependencies>
         <dependency>

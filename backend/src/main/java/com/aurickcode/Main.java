@@ -26,7 +26,9 @@ public class Main {
             String email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@aurickcode.com";
             Random random = new Random();
 
-            Customer customer = new Customer(firstName + " " + lastName, email, random.nextInt(16, 99));
+            String[] gender = {"Male", "Female"};
+
+            Customer customer = new Customer(firstName + " " + lastName, email, random.nextInt(16, 99), gender[random.nextInt(0, 2)]);
 
             customerRepository.save(customer);
         };

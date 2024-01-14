@@ -32,14 +32,18 @@ public class Customer {
 
     @Column(nullable = false)
     private Integer age;
+
+    @Column(nullable = false)
+    private String gender;
         
     public Customer() {
     }
 
-    public Customer(String name, String email, Integer age) {
+    public Customer(String name, String email, Integer age, String gender) {
         this.name = name;
         this.email = email;
         this.age = age;
+        this.gender = gender;
     }
 
     public Customer(Long id, String name, String email, int age) {
@@ -49,38 +53,54 @@ public class Customer {
         this.age = age;
     }
 
-    public Long getId() {
-        return id;
+    public Customer(Long id, String name, String email, int age, String gender) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.age = age;
+        this.gender = gender;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public Long getId() {
+        return id;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getEmail() {
         return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public Integer getAge() {
         return age;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public void setAge(Integer age) {
         this.age = age;
     }
-        
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -89,6 +109,7 @@ public class Customer {
         result = prime * result + ((name == null) ? 0 : name.hashCode());
         result = prime * result + ((email == null) ? 0 : email.hashCode());
         result = prime * result + ((age == null) ? 0 : age.hashCode());
+        result = prime * result + ((gender == null) ? 0 : gender.hashCode());
         return result;
     }
 
@@ -121,11 +142,19 @@ public class Customer {
                 return false;
         } else if (!age.equals(other.age))
             return false;
+        if (gender == null) {
+            if (other.gender != null)
+                return false;
+        } else if (!gender.equals(other.gender))
+            return false;
         return true;
     }
 
     @Override
     public String toString() {
-        return "Customer [id=" + id + ", name=" + name + ", email=" + email + ", age=" + age + "]";
+        return "Customer [id=" + id + ", name=" + name + ", email=" + email + ", age=" + age + ", gender=" + gender
+                + "]";
     }
+
+    
 }

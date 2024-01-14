@@ -39,8 +39,13 @@ public class CustomerIntegrationTest {
         String email = fakerName.lastName() +"-" + UUID.randomUUID() + "@aurickcode.com";
         int age = RANDOM.nextInt(1, 100);
 
+        Random random = new Random();
+
+        String[] gender = {"men", "women"};
+        String genVal = gender[0];
+
         CustomerRegistrationRequest request = new CustomerRegistrationRequest(
-            name, email, age);
+            name, email, age, genVal);
 
         // send a post request
         webTestClient.post()
@@ -64,7 +69,7 @@ public class CustomerIntegrationTest {
             .getResponseBody();
 
         // make sure that customer is present
-        Customer expectedCustomer = new Customer(name, email, age);
+        Customer expectedCustomer = new Customer(name, email, age, genVal);
 
         assertThat(allCustomers).usingRecursiveFieldByFieldElementComparatorIgnoringFields("id")
             .contains(expectedCustomer);
@@ -97,8 +102,13 @@ public class CustomerIntegrationTest {
         String email = fakerName.lastName() +"-" + UUID.randomUUID() + "@aurickcode.com";
         int age = RANDOM.nextInt(1, 100);
 
+        Random random = new Random();
+
+        String[] gender = {"men", "women"};
+        String genVal = gender[random.nextInt(0, 2)];
+        
         CustomerRegistrationRequest request = new CustomerRegistrationRequest(
-            name, email, age);
+            name, email, age, genVal);
 
         // send a post request
         webTestClient.post()
@@ -154,8 +164,13 @@ public class CustomerIntegrationTest {
         String email = fakerName.lastName() +"-" + UUID.randomUUID() + "@aurickcode.com";
         int age = RANDOM.nextInt(1, 100);
 
+        Random random = new Random();
+
+        String[] gender = {"men", "women"};
+        String genVal = gender[random.nextInt(0, 2)];
+
         CustomerRegistrationRequest request = new CustomerRegistrationRequest(
-            name, email, age);
+            name, email, age, genVal);
 
         // send a post request
         webTestClient.post()

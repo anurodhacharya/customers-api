@@ -1,7 +1,7 @@
 **/target/
 **/.vscode/
 **/node_modules
-
+**/storage/
 # Javascript
 
 # Logs
