@@ -57,8 +57,6 @@ jobs:
           '{"text":"Building with Maven :maven:"}' 
           ${{ secrets.WEBHOOK_URL }}
 
-
-
       - name: Post slack message
         run: >
           curl -X POST -H 'Content-type: application/json' --data
@@ -68,8 +66,8 @@ jobs:
       - name: Update Dockerrun.aws.json api image tag with new build number
         run: |
           echo "Dockerrun.aws.json before updating tag"
-          cat ../Dockerrun.aws.json
-          sed -i -E 's_(anurodh1/aurickcode-react:)([^"]*)_\1'${{ steps.build-number.outputs.BUILD_NUMBER }}'_' ../../Dockerrun.aws.json
+          cat ../../Dockerrun.aws.json
+          sed -i -E 's_(anurodh1/aurickcode-react-aws:)([^"]*)_\1'${{ steps.build-number.outputs.BUILD_NUMBER }}'_' ../../Dockerrun.aws.json
           echo "Dockerrun.aws.json after updating tag"
           cat ../../Dockerrun.aws.json
 

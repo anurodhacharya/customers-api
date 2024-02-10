@@ -1,7 +1,11 @@
 package com.aurickcode.customer;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Import;
+
 import com.aurickcode.AbstractTestContainers;
+import com.aurickcode.TestConfig;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import java.util.UUID;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,6 +16,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+@Import({TestConfig.class})
 public class CustomerRepositoryTest extends AbstractTestContainers {
 
     @Autowired
@@ -31,6 +36,7 @@ public class CustomerRepositoryTest extends AbstractTestContainers {
         Customer customer = new Customer(
             FAKER.name().firstName(),
             email,
+            "password",
             20,
             "men"
         );
@@ -57,6 +63,7 @@ public class CustomerRepositoryTest extends AbstractTestContainers {
         Customer customer = new Customer(
             FAKER.name().firstName(),
             email,
+            "password",
             20,
             "men"
         );

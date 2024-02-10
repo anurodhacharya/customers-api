@@ -1,5 +1,12 @@
 package com.aurickcode.customer;
 
+import java.util.Collection;
+import java.util.List;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -18,7 +25,7 @@ import jakarta.persistence.UniqueConstraint;
             )
         }
 )
-public class Customer {
+public class Customer implements UserDetails {
     @Id
     @SequenceGenerator(name = "customer_id_seq", sequenceName = "customer_id_seq", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "customer_id_seq")
@@ -35,31 +42,37 @@ public class Customer {
 
     @Column(nullable = false)
     private String gender;
+
+    @Column(nullable = false)
+    private String password;
         
     public Customer() {
     }
 
-    public Customer(String name, String email, Integer age, String gender) {
+    public Customer(Long id, String name, String email, String password, Integer age, String gender) {
+        this.id = id;
         this.name = name;
         this.email = email;
+        this.password = password;
         this.age = age;
         this.gender = gender;
     }
 
-    public Customer(Long id, String name, String email, int age) {
-        this.id = id;
+    public Customer(String name, String email, String password, int age, String gender) {
         this.name = name;
         this.email = email;
-        this.age = age;
-    }
-
-    public Customer(Long id, String name, String email, int age, String gender) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
+        this.password = password;
         this.age = age;
         this.gender = gender;
     }
+
+    // public Customer(Long id, String name, String email, int age, String gender) {
+    //     this.id = id;
+    //     this.name = name;
+    //     this.email = email;
+    //     this.age = age;
+    //     this.gender = gender;
+    // }
 
     public Long getId() {
         return id;
@@ -154,6 +167,41 @@ public class Customer {
     public String toString() {
         return "Customer [id=" + id + ", name=" + name + ", email=" + email + ", age=" + age + ", gender=" + gender
                 + "]";
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return List.of(new SimpleGrantedAuthority("ROLE_USER"));
+    }
+
+    @Override
+    public String getPassword() {
+        return this.password;
+    }
+
+    @Override
+    public String getUsername() {
+        return email;
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
     }
 
     

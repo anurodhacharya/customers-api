@@ -11,6 +11,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 @ExtendWith(MockitoExtension.class)
 public class CustomerServiceTest {
@@ -18,11 +19,14 @@ public class CustomerServiceTest {
     @Mock
     private CustomerDAO customerDAO;
 
+    @Mock
+    private PasswordEncoder passwordEncoder;
     private CustomerService underTest;
+    private final CustomerDTOMapper customerDTOMapper = new CustomerDTOMapper();
 
     @BeforeEach
     void setUp() {
-        underTest = new CustomerService(customerDAO);
+        underTest = new CustomerService(customerDAO, customerDTOMapper, passwordEncoder);
     }
 
     @Test
@@ -46,12 +50,14 @@ public class CustomerServiceTest {
     void testCanGetCustomer() {
         Long id = 10L;
 
-        Customer customer = new Customer(id, "Alex", "alex@gmail.com", 19);
+        Customer customer = new Customer(id, "Alex", "alex@gmail.com", "password", 19, "MALE");
         Mockito.when(customerDAO.selectCustomerById(id)).thenReturn(Optional.of(customer));
 
-        Customer actual = underTest.getCustomer(10L);
+        CustomerDTO expected = customerDTOMapper.apply(customer);
 
-        assertThat(actual).isEqualTo(customer);
+        CustomerDTO actual = underTest.getCustomer(10L);
+
+        assertThat(actual).isEqualTo(expected);
     }
 
     @Test

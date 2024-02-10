@@ -15,32 +15,31 @@ services:
       - db
     restart: unless-stopped
 
-  aurickcode-api:
-    container_name: aurickcode-api
-    image: anurodh1/aurickcode-api:0.0.1-SNAPSHOT
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/customer
-    ports:
-      - "8080:8080"
-    networks:
-      - db
-    depends_on:
-      - db
-    restart: unless-stopped
+  # aurickcode-api:
+  #   container_name: aurickcode-api
+  #   image: anurodh1/aurickcode-api:0.0.1-SNAPSHOT
+  #   environment:
+  #     - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/customer
+  #   ports:
+  #     - "8080:8080"
+  #   networks:
+  #     - db
+  #   depends_on:
+  #     - db
+  #   restart: unless-stopped
 
-
-  aurickcode-react:
-    container_name: aurickcode-react
-    image: anurodh1/aurickcode-react
-    build:
-      context: frontend/react
-      args:
-        api_base_url: http://localhost:8080
-    ports:
-      - "3000:5173"
-    depends_on:
-      - aurickcode-api
-    restart: unless-stopped
+  # aurickcode-react:
+  #   container_name: aurickcode-react
+  #   image: anurodh1/aurickcode-react
+  #   build:
+  #     context: frontend/react
+  #     args:
+  #       api_base_url: http://localhost:8080
+  #   ports:
+  #     - "3000:5173"
+  #   depends_on:
+  #     - aurickcode-api
+  #   restart: unless-stopped
 
 networks:
   db:
