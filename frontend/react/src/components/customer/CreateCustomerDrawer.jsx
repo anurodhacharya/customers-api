@@ -10,7 +10,7 @@ import { Button,
         DrawerFooter
 } from "@chakra-ui/react"
 
-import CreateCustomerForm from "./CreateCustomerForm";
+import CreateCustomerForm from "../shared/CreateCustomerForm";
 
 const AddIcon = () => "+";
 const CloseIcon = () => "x";
@@ -29,7 +29,7 @@ const DrawerForm = ({ fetchCustomers }) => {
             <DrawerHeader>Create new customer</DrawerHeader>
   
             <DrawerBody>
-              <CreateCustomerForm fetchCustomers={fetchCustomers}></CreateCustomerForm>
+              <CreateCustomerForm onSuccess={fetchCustomers}></CreateCustomerForm>
             </DrawerBody>
   
             <DrawerFooter>

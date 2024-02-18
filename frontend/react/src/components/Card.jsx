@@ -27,7 +27,7 @@ import {
 import { useRef } from 'react';
 import { deleteCustomer } from '../services/client';
 import { errorNotification, successNotification } from '../services/notification';
-import UpdateCustomerDrawer from './UpdateCustomerDrawer';
+import UpdateCustomerDrawer from './customer/UpdateCustomerDrawer';
 
 export default function CardWithImage( { id, name, email, age, gender, fetchCustomers } ) {
   if(gender == "men" || gender == "Male") {

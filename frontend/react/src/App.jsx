@@ -3,7 +3,7 @@ import SidebarWithHeader from './components/shared/SideBar';
 import CardWithImage from './components/Card';
 import { useEffect, useState } from 'react';
 import { getCustomers } from './services/client';
-import DrawerForm from './components/CreateCustomerDrawer';
+import DrawerForm from './components/customer/CreateCustomerDrawer';
 import { errorNotification } from './services/notification';
 
 const App = () => {

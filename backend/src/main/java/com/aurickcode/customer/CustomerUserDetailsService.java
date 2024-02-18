@@ -20,6 +20,4 @@ public class CustomerUserDetailsService implements UserDetailsService {
         return customerDAO.selectUserByEmail(username)
                     .orElseThrow(() -> new UsernameNotFoundException("Username " + username + " " + "not found"));
     }
-
-    
 }

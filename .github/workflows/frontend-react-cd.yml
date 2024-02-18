@@ -49,7 +49,7 @@ jobs:
             REPO=aurickcode-react \
             TAG=${{ steps.build-number.outputs.BUILD_NUMBER }} \
             ../../.ci/build-publish.sh . \
-                --build-arg api_base_url=http://aurick.com:8080
+                --build-arg api_base_url=http://Mylaterapp-env.eba-qyitqpyz.us-east-1.elasticbeanstalk.com:8080
 
       - name: Post slack message
         run: >

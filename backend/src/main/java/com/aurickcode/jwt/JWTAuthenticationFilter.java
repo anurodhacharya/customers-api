@@ -39,7 +39,7 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
 
                 if(authHeader == null || !authHeader.startsWith("Bearer ")) {
                     filterChain.doFilter(request, response);
-                    System.out.println("NO HEADER");
+                    // System.out.println("NO HEADER");
                     return;
                 }
 

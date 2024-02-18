@@ -10,7 +10,7 @@ import { Button,
         DrawerFooter
 } from "@chakra-ui/react"
 
-import { updateCustomer } from "../services/client";
+import { updateCustomer } from "../../services/client";
 import UpdateCustomerForm from "./UpdateCustomerForm";
 
 const CloseIcon = () => "x";

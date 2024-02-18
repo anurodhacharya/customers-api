@@ -10,8 +10,8 @@ import {
     Stack
 } from "@chakra-ui/react";
 
-import { updateCustomer } from '../services/client';
-import { errorNotification, successNotification } from '../services/notification';
+import { updateCustomer } from '../../services/client';
+import { errorNotification, successNotification } from '../../services/notification';
 
 const MyTextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);

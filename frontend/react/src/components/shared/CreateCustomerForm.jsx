@@ -12,8 +12,8 @@ import {
     Stack,
     useToast
 } from "@chakra-ui/react";
-import { saveCustomer } from '../services/client';
-import { errorNotification, successNotification } from '../services/notification';
+import { saveCustomer } from '../../services/client';
+import { errorNotification, successNotification } from '../../services/notification';
 
 const MyTextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
@@ -42,7 +42,7 @@ const MySelect = ({ label, ...props }) => {
 };
 
 // And now we can use these
-const CreateCustomerForm = ({ fetchCustomers }) => {
+const CreateCustomerForm = ({ onSuccess }) => {
   return (
     <>
       <Formik
@@ -52,6 +52,7 @@ const CreateCustomerForm = ({ fetchCustomers }) => {
           email: '',
           age: 0,
           gender: '',
+          password: ''
         }}
         validationSchema={Yup.object({
           name: Yup.string()
@@ -64,6 +65,10 @@ const CreateCustomerForm = ({ fetchCustomers }) => {
             .min(5, 'Must be at least 16 years of age')
             .max(100, 'Must be less than 100 years of age')
             .required('Required'),
+          password: Yup.string()
+            .min(6, 'Password must be of atleast 6 characters')
+            .max(30, 'Password cannot be of more than 30 characters')
+            .required('Required'),
           gender: Yup.string()
             .oneOf(
               ['Male', 'Female'],
@@ -74,22 +79,21 @@ const CreateCustomerForm = ({ fetchCustomers }) => {
         onSubmit={(customer, { setSubmitting }) => {
           setSubmitting(true);
           // alert(customer);
+          console.log(customer);
           saveCustomer(customer).then(res => {
-            // alert(JSON.stringify(customer, null, 2));
-            // alert("customer saved");
-            
             console.log(res);
             successNotification("Customer saved", `${customer.name} was successfully saved`);
-            fetchCustomers();
+            onSuccess(res);
             // console.log(JSON.stringify(customer, null, 2))
           }).catch(err => {
+              console.log("Inside catch");
               console.log(err);
               errorNotification(err.code, err.response.data.message);
           }).finally(() => {
+              console.log("Inside finally");
               setSubmitting(false);
           })
 
-          // console.log("HI");
         }}
       >
         {
@@ -115,6 +119,13 @@ const CreateCustomerForm = ({ fetchCustomers }) => {
                             name="age"
                             type="number"
                             placeholder="20"
+                        />
+
+                        <MyTextInput
+                            label="Password"
+                            name="password"
+                            type="password"
+                            placeholder="Enter your password"
                         />
 
                         <MySelect label="Gender" name="gender">
