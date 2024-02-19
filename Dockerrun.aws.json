@@ -3,7 +3,7 @@
     "containerDefinitions": [
     {
         "name": "aurickcode-react",
-        "image": "anurodh1/aurickcode-react-aws:19.02.2024.04.03.45",
+        "image": "anurodh1/aurickcode-react-aws:19.02.2024.04.27.08",
         "essential": true,
         "memory": 256,
         "portMappings": [
