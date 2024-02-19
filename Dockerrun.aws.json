@@ -15,7 +15,7 @@
     },
     {
         "name": "aurickcode-api",
-        "image": "anurodh1/aurickcode-api:0.0.1-SNAPSHOT",
+        "image": "anurodh1/aurickcode-api:latest",
         "essential": true,
         "memory": 512,
         "portMappings": [
