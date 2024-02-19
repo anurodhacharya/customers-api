@@ -7,8 +7,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import javax.security.auth.Subject;
-
 import org.springframework.stereotype.Service;
 
 import io.jsonwebtoken.Claims;

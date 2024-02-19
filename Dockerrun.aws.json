@@ -15,7 +15,7 @@
     },
     {
         "name": "aurickcode-api",
-        "image": "anurodh1/aurickcode-api:19.02.2024.00.33.49",
+        "image": "anurodh1/aurickcode-api:0.0.1-SNAPSHOT",
         "essential": true,
         "memory": 512,
         "portMappings": [
@@ -27,7 +27,7 @@
         "environment": [
             {                                                              
                 "name": "SPRING_DATASOURCE_URL",
-                "value": "jdbc:postgresql://awseb-e-pja3fqgmhi-stack-awsebrdsdatabase-5yoey3vd73eu.cg4brghwjpxn.us-east-1.rds.amazonaws.com:5432/customer"
+                "value": "jdbc:postgresql://awseb-e-fcyuhpmie9-stack-awsebrdsdatabase-tjvyy11jfmtr.cg4brghwjpxn.us-east-1.rds.amazonaws.com:5432/customer"
             }
         ]
     }
