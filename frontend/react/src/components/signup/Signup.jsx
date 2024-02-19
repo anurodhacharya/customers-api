@@ -25,7 +25,7 @@ const Signup = () => {
   const navigate = useNavigate();
   const { setCustomerFromToken } = useAuth();
   
-    return (
+    return ( 
       <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
         {/* <Flex p={8} flex={1} align={'center'} justify={'center'} justifyContent={"center"} flexDirection={'column'}> */}
         <Flex p={8} flex={1} alignItems={'center'} justifyContent={'center'}>
