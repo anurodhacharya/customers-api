@@ -164,7 +164,7 @@ const MobileNav = ({ onOpen, ...rest }) => {
                       <Text key={id} fontSize="xs" color="gray.600">
                         { role }
                       </Text>
-                  )) } 
+                  )) }  
                   {/* <Text fontSize="xs" color="gray.600">
                     { customer.roles[0] }
                   </Text> */}
