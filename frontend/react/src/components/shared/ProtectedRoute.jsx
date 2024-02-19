@@ -6,7 +6,7 @@ const ProtectedRoute = ({ children }) => {
 
     const { isCustomerAuthenticated } = useAuth();
     console.log("Protected Route");
-    const navigate = useNavigate();
+    const navigate = useNavigate(); 
 
     useEffect(() => {
         if(!isCustomerAuthenticated()) {
