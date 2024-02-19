@@ -7,5 +7,5 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class RequestValidationException extends RuntimeException{
     public RequestValidationException(String message) {
         super(message); 
-    }
+    } 
 }
