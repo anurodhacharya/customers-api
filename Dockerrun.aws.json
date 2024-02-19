@@ -15,7 +15,7 @@
     },
     {
         "name": "aurickcode-api",
-        "image": "anurodh1/aurickcode-api:18.02.2024.23.06.22",
+        "image": "anurodh1/aurickcode-api:19.02.2024.00.33.49",
         "essential": true,
         "memory": 512,
         "portMappings": [
