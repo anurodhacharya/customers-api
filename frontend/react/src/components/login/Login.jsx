@@ -40,7 +40,7 @@ const LoginForm = () => {
   const navigate =  useNavigate();
 
   return (
-    <Formik
+    <Formik 
       validateOnMount={true}
       validationSchema={
         Yup.object({
