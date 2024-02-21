@@ -23,23 +23,19 @@ import {
 } from '@chakra-ui/react'
 import {
   FiHome,
-  FiTrendingUp,
-  FiCompass,
-  FiStar,
   FiSettings,
   FiMenu,
   FiBell,
+  FiUsers,
   FiChevronDown,
 } from 'react-icons/fi'
 import { useAuth } from '../context/AuthContext'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const LinkItems = [
-  { name: 'Home', icon: FiHome },
-  { name: 'Trending', icon: FiTrendingUp },
-  { name: 'Explore', icon: FiCompass },
-  { name: 'Favourites', icon: FiStar },
-  { name: 'Settings', icon: FiSettings },
+  { name: 'Home', route: '/dashboard', icon: FiHome },
+  { name: 'Customers', route: '/dashboard/customers', icon: FiUsers },
+  { name: 'Settings', route: '/dashboard/settings', icon: FiSettings },
 ]
 
 const SidebarContent = ({ onClose, ...rest }) => {
@@ -66,7 +62,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
       {LinkItems.map((link) => (
-        <NavItem key={link.name} icon={link.icon}>
+        <NavItem key={link.name} route={link.route} icon={link.icon}>
           {link.name}
         </NavItem>
       ))}
@@ -74,8 +70,9 @@ const SidebarContent = ({ onClose, ...rest }) => {
   )
 }
 
-const NavItem = ({ icon, children, ...rest }) => {
+const NavItem = ({ icon, route, children, ...rest }) => {
   return (
+    <Link to={route} style={{textDecoration: 'none'}} _focus={{boxShadow: 'none'}}>
     <Box
       as="a"
       href="#"
@@ -106,6 +103,7 @@ const NavItem = ({ icon, children, ...rest }) => {
         {children}
       </Flex>
     </Box>
+    </Link>
   )
 }
 

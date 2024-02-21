@@ -36,7 +36,7 @@ const Signup = () => {
               const jwtToken = res.headers.authorization;
               localStorage.setItem("access_token", jwtToken);
               setCustomerFromToken();
-              navigate('/dashboard');
+              navigate('/dashboard/customers');
             }}/>
             <Link color={'blue.500'} to={'/'}>
             Have an account? Login now.
