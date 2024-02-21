@@ -78,8 +78,7 @@ const CreateCustomerForm = ({ onSuccess }) => {
         })}
         onSubmit={(customer, { setSubmitting }) => {
           setSubmitting(true);
-          // alert(customer);
-          console.log(customer);
+          alert(JSON.stringify(customer));
           saveCustomer(customer).then(res => {
             console.log(res);
             successNotification("Customer saved", `${customer.name} was successfully saved`);

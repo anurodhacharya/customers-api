@@ -81,6 +81,7 @@ const App = () => {
         { customers.map((customer, index) => {
           return (
             <WrapItem key={index}>
+              {console.log(customer)}
               <CardWithImage {...customer} fetchCustomers={fetchCustomers}></CardWithImage>
             </WrapItem>
           )

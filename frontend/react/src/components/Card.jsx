@@ -29,11 +29,11 @@ import { deleteCustomer } from '../services/client';
 import { errorNotification, successNotification } from '../services/notification';
 import UpdateCustomerDrawer from './customer/UpdateCustomerDrawer';
 
-export default function CardWithImage( { id, name, email, age, gender, fetchCustomers } ) {
-  if(gender == "men" || gender == "Male") {
-    gender = "men";
+export default function CardWithImage( { id, name, email, age, Gender, fetchCustomers } ) {
+  if(Gender == "men" || Gender == "Male") {
+    Gender = "men";
   } else {
-    gender = "women";
+    Gender = "women";
   }
 
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -65,7 +65,7 @@ export default function CardWithImage( { id, name, email, age, gender, fetchCust
           <Avatar
             size={'xl'}
             src={
-              `https://randomuser.me/api/portraits/${gender}/${id}.jpg`}
+              `https://randomuser.me/api/portraits/${Gender}/${id}.jpg`}
             
             css={{
               border: '2px solid white',
@@ -82,7 +82,7 @@ export default function CardWithImage( { id, name, email, age, gender, fetchCust
 
             </Heading>
             <Text color={'gray.500'}>{ email }</Text>
-            <Text color={'gray.500'}>Age: { age } | { gender }</Text>
+            <Text color={'gray.500'}>Age: { age } | { Gender }</Text>
 
           </Stack>
         </Box>
